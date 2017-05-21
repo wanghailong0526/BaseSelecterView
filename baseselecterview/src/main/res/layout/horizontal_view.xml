@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recyclerViewHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_pop"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="3dp"
+        android:background="@android:color/white"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:minHeight="0dp"
+        android:text="津贵"
+        android:textColor="#656a89"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_toRightOf="@+id/btn_pop"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_activity_tabbar_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_pop"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/hs_activity_tabbar"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_activity_tabbar_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
